@@ -1,0 +1,23 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: black;
+  color: white;
+  padding: 25px;
+}
+
+.navbar a {
+  color: white;
+  margin: 0px 10px;
+}
+
+.navbar img {
+  height: 50px;
+  transition: all 200ms ease-in-out;
+}
+
+.navbar img:hover {
+  transform: scale(1.1);
+}
