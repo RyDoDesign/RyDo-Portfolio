@@ -10,7 +10,7 @@
 .titleCard {
   display: flex;
   flex-direction: column;
-  width: calc(100vw - 100px);
+  width: calc(100vw - 50px);
   height: calc(((100vw - 100px)*0.6666667) + 100px);
   border-radius: 25px;
   margin-bottom: 25px;
