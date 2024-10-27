@@ -13,10 +13,10 @@ export function Navbar() {
         </div>
         <div className="navLinks">
           <Link to="/">
-            <a className="activeLink">Work</a>
+            <a>Work</a>
           </Link>
           <Link to="/connect">
-            <a>Connect</a>
+            <a className="activeLink">Connect</a>
           </Link>
         </div>
       </div>
