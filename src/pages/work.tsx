@@ -2,7 +2,7 @@ import "../App.css";
 import "../css/work.css";
 import { Link } from "react-router-dom";
 import bmaTC from "../images/bmaTC.png";
-// import gmsTC from "../images/gmsTC.mp4";
+import gmsTC from "../images/gmsTC.mp4";
 import miscTC from "../images/miscTC.png";
 import daysOfDesignTC from "../images/30DaysOfDesignTC.png";
 import kingsAndQueensTC from "../images/kingsAndQueensTC.png";
@@ -24,7 +24,7 @@ export function Work() {
           </Link>
           <Link to="/gms">
             <div className="titleCard">
-              {/* <video autoPlay loop muted><source src={gmsTC} type="video/mp4" /></video> */}
+              <video autoPlay loop muted><source src={gmsTC} type="video/mp4" /></video>
               <div className="projectInfo">
                 <h1>GMs • Digital Art</h1>
                 <h3>2023 - 2024</h3>
