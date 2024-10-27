@@ -10,10 +10,16 @@ body {
 }
 
 main {
-  padding: 50px;
+  padding: 25px;
   justify-content: center;
   align-items: center;
   align-content: center;
+}
+
+@media (orientation: landscape) {
+  main {
+    padding: 50px;
+  }
 }
 
 a {
