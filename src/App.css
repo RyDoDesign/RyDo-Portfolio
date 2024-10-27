@@ -10,7 +10,7 @@ body {
 }
 
 main {
-  padding: 25px;
+  padding: 50px 25px 25px;
   justify-content: center;
   align-items: center;
   align-content: center;
