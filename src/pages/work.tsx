@@ -67,6 +67,15 @@ export function Work() {
               </div>
             </div>
           </Link> */}
+          <Link to="/kqt">
+            <div className="titleCard">
+              <img src={kingsAndQueensTC} alt="Kings & Queens title card" />
+              <div className="projectInfo">
+                <h1>Photography</h1>
+                <h3>2016 - 2019</h3>
+              </div>
+            </div>
+          </Link>
         </div>
       </main>
     </>
