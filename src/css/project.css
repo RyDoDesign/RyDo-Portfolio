@@ -46,7 +46,6 @@
 }
 
 .gallery img,
-.promo img,
 .gallery video {
   width: calc(50% - 25px);
   border-radius: 25px;
@@ -55,7 +54,6 @@
 @media (orientation: landscape) {
 
   .gallery img,
-  .promo img,
   .gallery video {
     width: calc(25% - 37.5px);
     border-radius: 25px;

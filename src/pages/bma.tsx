@@ -7,18 +7,14 @@ import bmaHomePageLoop from "../images/bmaHomePageLoop.mp4";
 
 export function BMA() {
 
-  const [imageCount, setImageCount] = useState(12);
-
-  function increaseGalSize() {
-    setImageCount(prevCount => prevCount + 24);
-  };
+  const [imageCount, setImageCount] = useState(48);
 
   const collectionImages: string[] = [];
   for (let i = 0; i < imageCount && i < 60; i++) {
-    if (i === 17) {
-      collectionImages.push('https://ik.imagekit.io/kgfrj9r2z/bmaHighlights/' + i + '.gif')
+    if (i === 1000) {
+      collectionImages.push('https://ik.imagekit.io/kgfrj9r2z/bmaHighlights-1/' + i + '.gif')
     } else {
-      collectionImages.push('https://ik.imagekit.io/kgfrj9r2z/bmaHighlights/' + i + '.png')
+      collectionImages.push('https://ik.imagekit.io/kgfrj9r2z/bmaHighlights-1/' + i + '.png')
     }
   };
 
@@ -51,25 +47,23 @@ export function BMA() {
               <img key={index} src={src} alt={index.toString()} />
             ))}
           </div>
-          <button onClick={increaseGalSize}>Show More</button>
         </section>
         <section className='website'>
-          <h1>The Website</h1>
+          <h1>Minting Website</h1>
           <Link to="https://www.bearmarketassholes.io/" target="_blank">
             <div className="bmaHomePageLoop">
               <video autoPlay loop muted><source src={bmaHomePageLoop} type="video/mp4" /></video>
             </div>
           </Link>
         </section>
-        <section className='promo'>
-          <h1>The Art</h1>
+        {/* <section className="gallery">
+          <h1>The Promo</h1>
           <div className="imageGrid">
             {promoImages.map((src, index) => (
               <img key={index} src={src} alt={index.toString()} />
             ))}
           </div>
-          <button onClick={increaseGalSize}>Show More</button>
-        </section>
+        </section> */}
       </main>
     </>
   )
