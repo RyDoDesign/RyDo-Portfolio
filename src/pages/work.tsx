@@ -1,12 +1,12 @@
 import "../App.css";
 import "../css/work.css";
 import { Link } from "react-router-dom";
-import bmaTC from "../images/bmaTC.png";
-import gmsTC from "../images/gmsTC.mp4";
-import miscTC from "../images/miscTC.png";
-import daysOfDesignTC from "../images/30DaysOfDesignTC.png";
-import kingsAndQueensTC from "../images/kingsAndQueensTC.png";
-import unfinishedNFTsTC from "../images/unfinishedNFTsTC.png";
+import bmaTC from "../images/titleCards/bmaTC.png";
+import gmsTC from "../images/titleCards/gmsTC.mp4";
+import miscTC from "../images/titleCards/miscTC.png";
+import daysOfDesignTC from "../images/titleCards/30DaysOfDesignTC.png";
+import kingsAndQueensTC from "../images/titleCards/kingsAndQueensTC.png";
+import unfinishedNFTsTC from "../images/titleCards/unfinishedNFTsTC.png";
 
 export function Work() {
   return (
@@ -72,7 +72,7 @@ export function Work() {
               <img src={kingsAndQueensTC} alt="Kings & Queens title card" />
               <div className="projectInfo">
                 <h1>Photography</h1>
-                <h3>2016 - 2019</h3>
+                <h3>2016 - 2020</h3>
               </div>
             </div>
           </Link>

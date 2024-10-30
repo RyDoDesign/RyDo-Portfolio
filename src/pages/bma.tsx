@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { Link } from "react-router-dom";
+import { bmaImages } from "../assets/bmaImages";
 import "../App.css";
 import "../css/project.css";
-import bmaHomePageLoop from "../images/bmaHomePageLoop.mp4";
-
+import bmaHomePageLoop from "../images/bma/bmaHomePageLoop.mp4";
 
 export function BMA() {
 
@@ -11,12 +11,14 @@ export function BMA() {
 
   const collectionImages: string[] = [];
   for (let i = 0; i < imageCount && i < 60; i++) {
-    if (i === 1000) {
-      collectionImages.push('https://ik.imagekit.io/kgfrj9r2z/bmaHighlights-1/' + i + '.gif')
-    } else {
-      collectionImages.push('https://ik.imagekit.io/kgfrj9r2z/bmaHighlights-1/' + i + '.png')
-    }
+    collectionImages.push(Object(bmaImages)[i])
+    console.log(Object(bmaImages)[i]);
   };
+
+  // const collectionImages: string[] = [];
+  // for (let i = 0; i < imageCount && i < 60; i++) {
+  //   collectionImages.push('https://ik.imagekit.io/kgfrj9r2z/bmaHighlights-1/' + i + '.png')
+  // };
 
   const promoImages: string[] = [];
   for (let i = 0; i < imageCount && i < 14; i++) {
